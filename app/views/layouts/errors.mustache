@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{meta}}
+    <title>{{application_title}}</title>
+    {{application_stylesheet}}
+    {{application_javascript}}
+  </head>
+  <body>
+    {{prepend_body}}
+    {{> common/header}}
+    {{> common/nav}}
+    <div class="nyu-container">
+      <div class="col-sm-12">
+        {{> common/alerts }}
+        {{prepend_yield}}
+        {{yield}}
+      </div>
+    </div>
+    {{> common/footer}}
+  </body>
+</html>
