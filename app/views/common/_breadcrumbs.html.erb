@@ -1,0 +1,6 @@
+<ul class="breadcrumb">
+  <% t('errors.breadcrumbs').each do |breadcrumb| %>
+    <li><a href="<%= breadcrumb.first.last %>"><%= breadcrumb.first.first %></a></li>
+  <% end %>
+    <li class="active"><%= t('errors.application_title') %></li>
+</ul>

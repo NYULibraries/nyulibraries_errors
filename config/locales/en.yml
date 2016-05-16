@@ -1,0 +1,21 @@
+en:
+  errors:
+    root_url: https://library.nyu.edu
+    parent_application_title: NYU Division of Libraries
+    application_title: BobCat
+    breadcrumbs:
+      - NYU Division of Libraries: https://library.nyu.edu
+    suggested_links:
+      header: Suggested Links
+      links:
+        - Report a Broken Link: https://nyu.qualtrics.com/jfe/form/SV_8AnbZWUryVfpWXH
+        - Ask a Librarian: https://library.nyu.edu/ask/
+        - Check the Status Page: https://nyulibraries.statuspage.io/
+    "500":
+      header: Service Outage
+    "404":
+      header: Page Not Found
+    "422":
+      header: Cannot Complete Action
+    "403":
+      header: Unavailable

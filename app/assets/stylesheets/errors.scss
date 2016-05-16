@@ -1,0 +1,15 @@
+/*
+ *= require_tree .
+ */
+$nyu-purple: #57068C !default;
+header {
+  margin: auto;
+  padding: 30px;
+  background-color: $nyu-purple;
+}
+.nyu-container {
+  padding: 0 1em;
+}
+.breadcrumb {
+  padding-left: 30px !important;
+}
