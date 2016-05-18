@@ -1,0 +1,9 @@
+en2:
+  nyulibraries_errors:
+    application_title: NYULibrariesErrors Title
+    suggested_links:
+      header: Override Suggested links
+      links:
+        - Test Link: example.com
+      additional_links:
+        - Addl Test Link: example.com

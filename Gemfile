@@ -9,6 +9,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'simplecov'
+  gem 'coveralls', require: false
 
   platforms :jruby do
     gem 'therubyrhino'

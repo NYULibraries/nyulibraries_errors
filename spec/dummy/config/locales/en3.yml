@@ -1,0 +1,10 @@
+en3:
+  application_title: Application Title
+  nyulibraries_errors:
+    "500":
+      suggested_links:
+        header: 500 Suggested links
+        links:
+          - 500 Test Link: example.com
+        additional_links:
+          - 500 Addl Test Link: example.com

@@ -45,11 +45,19 @@ module NyulibrariesErrors
     end
 
     def default_links
-      @default_links ||= t('nyulibraries_errors.suggested_links.links')
+      @default_links ||= begin
+        t('nyulibraries_errors.suggested_links.links', raise: true)
+      rescue I18n::MissingTranslationData
+        nil
+      end
     end
 
     def default_additional_links
-      @default_additional_links ||= t('nyulibraries_errors.suggested_links.additional_links')
+      @default_additional_links ||= begin
+        t('nyulibraries_errors.suggested_links.additional_links', raise: true)
+      rescue I18n::MissingTranslationData
+        nil
+      end
     end
 
   end
