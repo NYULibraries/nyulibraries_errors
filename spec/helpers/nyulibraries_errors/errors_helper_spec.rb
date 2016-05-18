@@ -5,11 +5,11 @@ describe NyulibrariesErrors::ErrorsHelper do
 
   describe '#meta' do
     subject { meta_tags }
-    it { is_expected.to include '<meta charset="utf-8" />' }
-    it { is_expected.to include '<meta content="width=device-width, initial-scale=1.0" name="viewport" />' }
-    it { is_expected.to include '<meta content="True" name="HandheldFriendly" />' }
-    it { is_expected.to include '<meta content="on" http-equiv="cleartype" />' }
-    it { is_expected.to include '<link href="https://library.nyu.edu/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />' }
+    it { is_expected.to match /charset="utf-8"/ }
+    it { is_expected.to match /content="width=device-width, initial-scale=1.0"/ }
+    it { is_expected.to match /name="HandheldFriendly"/ }
+    it { is_expected.to match /http-equiv="cleartype"/ }
+    it { is_expected.to match /href="https:\/\/library\.nyu\.edu\/favicon\.ico"/ }
   end
 
   describe '#application_title' do
