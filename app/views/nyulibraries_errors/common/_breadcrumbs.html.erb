@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-  <% t('errors.breadcrumbs').each do |breadcrumb| %>
+  <% t('nyulibraries_errors.breadcrumbs').each do |breadcrumb| %>
     <li><a href="<%= breadcrumb.first.last %>"><%= breadcrumb.first.first %></a></li>
   <% end %>
-    <li class="active"><%= t('errors.application_title') %></li>
+    <li class="active"><%= application_title %></li>
 </ul>

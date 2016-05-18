@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t('errors.application_title') %></title>
+    <%= meta_tags %>
+    <title><%= t('nyulibraries_errors.page_title') %> | <%= application_title %> <%= t('nyulibraries_errors.error') %></title>
     <%= stylesheet_link_tag 'errors' %>
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel: :stylesheet, type: "text/css" %>
   </head>
   <body>
     <header>
-      <span><a href="<%= t('errors.root_url') %>" target="_blank"><%= image_tag "header.png" %></a></span>
+      <span><a href="<%= t('nyulibraries_errors.root_url') %>" target="_blank"><%= image_tag "header.png" %></a></span>
     </header>
     <nav>
-      <%= render 'common/breadcrumbs' %>
+      <%= render 'nyulibraries_errors/common/breadcrumbs' %>
     </nav>
     <div class="nyu-container">
       <div class="col-sm-12">
