@@ -3,14 +3,11 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'rails'
-  gem 'rake'
-  gem 'pry'
-  gem 'rspec-rails'
-  gem 'capybara'
-  gem 'factory_girl_rails'
-  gem 'simplecov'
-  gem 'coveralls', require: false
+  gem 'rails', '~> 4.2'
+  gem 'rake', '~> 11.1'
+  gem 'pry', '~> 0.10'
+  gem 'rspec-rails', '~> 3.4'
+  gem 'coveralls', '~> 0.8'
 
   platforms :jruby do
     gem 'therubyrhino'
