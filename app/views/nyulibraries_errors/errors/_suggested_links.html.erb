@@ -3,12 +3,12 @@
 <ul>
   <% if links_count(error) > 0 %>
     <% links_for_error(error).each do |suggested_link| %>
-      <%= render partial: 'nyulibraries_errors/common/li_link', locals: { link_hash: suggested_link } %>
+      <%= render partial: 'li_link', locals: { link_hash: suggested_link } %>
     <% end %>
   <% end %>
   <% if additional_links_count(error) > 0 %>
     <% additional_links_for_error(error).each do |additional_link| %>
-      <%= render partial: 'nyulibraries_errors/common/li_link', locals: { link_hash: additional_link } %>
+      <%= render partial: 'li_link', locals: { link_hash: additional_link } %>
     <% end %>
   <% end %>
 </ul>
