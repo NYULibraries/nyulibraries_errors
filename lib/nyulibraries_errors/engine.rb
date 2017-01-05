@@ -10,7 +10,7 @@ module NyulibrariesErrors
 
     # Add engine stylesheet to precompiled assets
     initializer "config.assets.precompile" do |app|
-      app.config.assets.precompile += %w( errors.css )
+      app.config.assets.precompile += %w( nyulibraries_errors.css nyulibraries_errors-header.png )
     end
 
     # Include the view path in the client application

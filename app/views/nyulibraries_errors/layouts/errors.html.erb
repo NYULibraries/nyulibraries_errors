@@ -3,12 +3,12 @@
   <head>
     <%= meta_tags %>
     <title><%= t('nyulibraries_errors.page_title') %> | <%= application_title %> <%= t('nyulibraries_errors.error') %></title>
-    <%= stylesheet_link_tag 'errors' %>
+    <%= stylesheet_link_tag 'nyulibraries_errors' %>
     <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel: :stylesheet, type: "text/css" %>
   </head>
   <body>
     <header>
-      <span><a href="<%= t('nyulibraries_errors.root_url') %>" target="_blank"><%= image_tag "header.png" %></a></span>
+      <span><a href="<%= t('nyulibraries_errors.root_url') %>" target="_blank"><%= image_tag "nyulibraries_errors-header.png" %></a></span>
     </header>
     <nav>
       <%= render 'breadcrumbs' %>
