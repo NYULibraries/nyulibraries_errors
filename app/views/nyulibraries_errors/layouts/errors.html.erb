@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <%= meta_tags %>
     <title><%= t('nyulibraries_errors.page_title') %> | <%= application_title %> <%= t('nyulibraries_errors.error') %></title>
@@ -8,15 +8,15 @@
   </head>
   <body>
     <header>
-      <span><a href="<%= t('nyulibraries_errors.root_url') %>" target="_blank"><%= image_tag "nyulibraries_errors-header.png" %></a></span>
+      <span><a href="<%= t('nyulibraries_errors.root_url') %>" target="_blank" aria-label="NYU Libraries homepage"><%= image_tag "https://cdn.library.nyu.edu/images/nyulibraries-logo.svg", alt: "NYU Libraries logo", width: "233", height: "30" %></a></span>
     </header>
     <nav>
       <%= render 'breadcrumbs' %>
     </nav>
-    <div class="nyu-container">
+    <main class="nyu-container">
       <div class="col-sm-12">
         <%= yield %>
       </div>
-    </div>
+    </main>
   </body>
 </html>
