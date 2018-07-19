@@ -1,3 +1,7 @@
 module NyulibrariesErrors
-  VERSION = "1.0.1"
+  def self.version
+    @version ||= File.read(File.join(File.dirname(__FILE__), '..', '..', 'VERSION')).chomp
+  end
+
+  VERSION = version
 end
