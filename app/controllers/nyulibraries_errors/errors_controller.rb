@@ -1,6 +1,6 @@
 module NyulibrariesErrors
   class ErrorsController < ApplicationController
-    skip_before_filter :passive_login, unless: -> { defined?(passive_login).nil? }
+    skip_before_action :passive_login, unless: -> { defined?(passive_login).nil? }, raise: false
     layout 'errors'
 
     def not_found
