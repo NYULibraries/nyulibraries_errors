@@ -7,5 +7,5 @@ rvm:
 env:
   - RAILS_VERSION=4.2
   - RAILS_VERSION=5.1
-  - RAILS_VERSION=5.2
   - RAILS_VERSION=5.2.1
+  - RAILS_VERSION=master
